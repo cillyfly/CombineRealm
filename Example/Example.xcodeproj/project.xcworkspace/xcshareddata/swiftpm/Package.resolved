@@ -2,30 +2,21 @@
   "object": {
     "pins": [
       {
-        "package": "CombineRealm",
-        "repositoryURL": "https://github.com/CombineCommunity/CombineRealm.git",
-        "state": {
-          "branch": null,
-          "revision": "9c8f4478f0d603afba2706882ca3212432b5aaee",
-          "version": "2.0.0"
-        }
-      },
-      {
         "package": "Realm",
         "repositoryURL": "https://github.com/realm/realm-cocoa.git",
         "state": {
           "branch": null,
-          "revision": "99c7d89791dfe8730c145461d59969eb4c56c557",
-          "version": "5.3.5"
+          "revision": "330a239712af77a3b0926b9ffa9582302a0b9923",
+          "version": "10.42.1"
         }
       },
       {
-        "package": "RealmCore",
+        "package": "RealmDatabase",
         "repositoryURL": "https://github.com/realm/realm-core",
         "state": {
           "branch": null,
-          "revision": "b7c49bb107cfc933016792e78fc5daa2aca71a14",
-          "version": "6.0.19"
+          "revision": "c04f5e401a1ec682e6b08b1ee157e19a0f834a5f",
+          "version": "13.17.1"
         }
       }
     ]

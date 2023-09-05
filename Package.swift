@@ -14,12 +14,12 @@ let package = Package(
             targets: ["CombineRealm"]),
     ],
     dependencies: [
-        .package(url: "https://github.com/realm/realm-cocoa.git", .upToNextMajor(from: "5.0.0"))
+        .package(url: "https://github.com/realm/realm-cocoa.git", .upToNextMajor(from: "10.42.1"))
     ],
     targets: [
         .target(
             name: "CombineRealm",
-            dependencies: ["Realm", "RealmSwift"],
+            dependencies: ["RealmSwift"],
             path: "Sources"
         ),
         .testTarget(

@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		5D450BDB24F2A0C0004A2648 /* CombineRealm in Frameworks */ = {isa = PBXBuildFile; productRef = 5D450BDA24F2A0C0004A2648 /* CombineRealm */; };
 		5D6C5C4423ECA6BD00853061 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D6C5C4323ECA6BD00853061 /* AppDelegate.swift */; };
 		5D6C5C4623ECA6BD00853061 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D6C5C4523ECA6BD00853061 /* SceneDelegate.swift */; };
 		5D6C5C4823ECA6BD00853061 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D6C5C4723ECA6BD00853061 /* ViewController.swift */; };
@@ -15,6 +14,7 @@
 		5D6C5C4D23ECA6BE00853061 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5D6C5C4C23ECA6BE00853061 /* Assets.xcassets */; };
 		5D6C5C5023ECA6BE00853061 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5D6C5C4E23ECA6BE00853061 /* LaunchScreen.storyboard */; };
 		5D6C5C6723ECD1A800853061 /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D6C5C6623ECD1A800853061 /* Models.swift */; };
+		B62F495D2AA727B000ECFF94 /* CombineRealm in Frameworks */ = {isa = PBXBuildFile; productRef = B62F495C2AA727B000ECFF94 /* CombineRealm */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +37,7 @@
 		5D6C5C4F23ECA6BE00853061 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5D6C5C5123ECA6BE00853061 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5D6C5C6623ECD1A800853061 /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
+		B62F495A2AA7255E00ECFF94 /* CombineRealm */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = CombineRealm; path = ..; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -44,7 +45,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5D450BDB24F2A0C0004A2648 /* CombineRealm in Frameworks */,
+				B62F495D2AA727B000ECFF94 /* CombineRealm in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -71,9 +72,11 @@
 		5D6C5C3723ECA6BD00853061 = {
 			isa = PBXGroup;
 			children = (
+				B62F49592AA7255E00ECFF94 /* Packages */,
 				5D6C5C4223ECA6BD00853061 /* Example */,
 				5D02515523F217C000CB304A /* CombineRealmTest */,
 				5D6C5C4123ECA6BD00853061 /* Products */,
+				B62F495B2AA727B000ECFF94 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -100,6 +103,21 @@
 			path = Example;
 			sourceTree = "<group>";
 		};
+		B62F49592AA7255E00ECFF94 /* Packages */ = {
+			isa = PBXGroup;
+			children = (
+				B62F495A2AA7255E00ECFF94 /* CombineRealm */,
+			);
+			name = Packages;
+			sourceTree = "<group>";
+		};
+		B62F495B2AA727B000ECFF94 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -117,7 +135,7 @@
 			);
 			name = Example;
 			packageProductDependencies = (
-				5D450BDA24F2A0C0004A2648 /* CombineRealm */,
+				B62F495C2AA727B000ECFF94 /* CombineRealm */,
 			);
 			productName = Example;
 			productReference = 5D6C5C4023ECA6BD00853061 /* Example.app */;
@@ -148,7 +166,6 @@
 			);
 			mainGroup = 5D6C5C3723ECA6BD00853061;
 			packageReferences = (
-				5D450BD924F2A0C0004A2648 /* XCRemoteSwiftPackageReference "CombineRealm" */,
 			);
 			productRefGroup = 5D6C5C4123ECA6BD00853061 /* Products */;
 			projectDirPath = "";
@@ -379,21 +396,9 @@
 		};
 /* End XCConfigurationList section */
 
-/* Begin XCRemoteSwiftPackageReference section */
-		5D450BD924F2A0C0004A2648 /* XCRemoteSwiftPackageReference "CombineRealm" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/CombineCommunity/CombineRealm.git";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 2.0.0;
-			};
-		};
-/* End XCRemoteSwiftPackageReference section */
-
 /* Begin XCSwiftPackageProductDependency section */
-		5D450BDA24F2A0C0004A2648 /* CombineRealm */ = {
+		B62F495C2AA727B000ECFF94 /* CombineRealm */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 5D450BD924F2A0C0004A2648 /* XCRemoteSwiftPackageReference "CombineRealm" */;
 			productName = CombineRealm;
 		};
 /* End XCSwiftPackageProductDependency section */
